@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is the link for the sun icon in the browser's title-->
+    <link rel="icon" href="images/sunny.png" type="image/x-icon">
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&amp;display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock">
+        <div id="date"></div>
+        <div id="time"></div>
+      </div>
+      <div class="search-container">
+        <!--This div contains an <input> element of type "text" for entering a city name. The placeholder attribute sets a placeholder text that is displayed inside the input field. The id attribute is set to "city", which can be used to reference this element in JavaScript. The value attribute is set to "Leipzig", so the default value of the input field will be "Leipzig". Next to the input field, there is a <button> element with the id attribute set to "search-btn". This button is used to initiate the search.-->
+        <input type="text" placeholder="Please enter the location!" id="city" value="Leipzig">
+        <button id="search-btn">Search</button>
+      </div>
+      <!--This div is initially empty but will be populated with the weather information retrieved from the search.-->
+      <div id="result"></div>
+    </div>
+    <!-- javaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
